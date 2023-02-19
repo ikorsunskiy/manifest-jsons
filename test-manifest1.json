@@ -1,0 +1,33 @@
+{
+  "endpoints": {
+    "https://zapp-706-jw-player-demo.web.foo/jw/media": {
+      "name": "Test endoint manifest 1",
+      "method": "get",
+      "mime_type": "application/json",
+      "context_keys": [
+        "platform"
+      ],
+      "context_obj": [
+        {
+          "key": "platform",
+          "mapper": "",
+          "type": "ctx"
+        }
+      ]
+    },
+    "https://zapp-899-edye2.web.foo/jw/playlists/foo": {
+      "name": "Test endoint manifest 2",
+      "method": "post",
+      "mime_type": "application/json",
+      "context_keys": ["signedDeviceInfoToken"],
+      "context_obj": [
+        {
+          "key": "signedDeviceInfoToken",
+          "mapper": "infotoken",
+          "type": "ctx"
+         }
+       ]
+    }
+  }
+}
+   
